@@ -1,0 +1,45 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'><title>Cyber Risk Dashboard</title>
+<style>body{font-family:Segoe UI,Arial,sans-serif;margin:24px;color:#222;max-width:1000px}h1{color:#1F3A68}.kpis{display:flex;gap:12px;flex-wrap:wrap}.kpi{border:1px solid #ccc;border-radius:8px;padding:12px 16px;min-width:140px}.kpi b{font-size:28px;display:block}.row{display:flex;align-items:center;gap:8px;margin:4px 0}.lbl{width:120px}.bar{height:16px;display:inline-block;border-radius:3px}.val{min-width:40px}table{border-collapse:collapse;width:100%;font-size:14px}td,th{border:1px solid #ddd;padding:6px;text-align:left}th{background:#1F3A68;color:#fff}</style></head><body>
+<h1>Cyber Risk Assessment Dashboard</h1><p>As of 2026-11-19. Made-up sample data. Targets: Basic 5 business days, Intermediate 10 business days, Advanced 20 business days.</p>
+<h2>Performance</h2><div class='kpis'>
+<div class='kpi'><b>12</b>requests accepted</div>
+<div class='kpi'><b>2</b>sent back to requestor</div>
+<div class='kpi'><b>4</b>open (3 overdue)</div>
+<div class='kpi'><b>75%</b>closed on time</div>
+<div class='kpi'><b>11.2</b>avg business days to close</div>
+</div><h3>Requests by assessment level</h3>
+<div class="row"><span class="lbl">Basic</span><span class="bar" style="width:60%;background:#1F3A68"></span><span class="val">3</span></div>
+<div class="row"><span class="lbl">Intermediate</span><span class="bar" style="width:80%;background:#1F3A68"></span><span class="val">4</span></div>
+<div class="row"><span class="lbl">Advanced</span><span class="bar" style="width:100%;background:#1F3A68"></span><span class="val">5</span></div>
+<h2>Risk</h2><h3>Risks by rating</h3>
+<div class="row"><span class="lbl">Critical</span><span class="bar" style="width:20%;background:#C00000"></span><span class="val">3</span></div>
+<div class="row"><span class="lbl">High</span><span class="bar" style="width:100%;background:#FF6600"></span><span class="val">15</span></div>
+<div class="row"><span class="lbl">Medium</span><span class="bar" style="width:60%;background:#FFC000"></span><span class="val">9</span></div>
+<div class="row"><span class="lbl">Low</span><span class="bar" style="width:13%;background:#70AD47"></span><span class="val">2</span></div>
+<h2>Compliance</h2><h3>Questions met by NIST CSF function (%)</h3>
+<div class="row"><span class="lbl">Govern</span><span class="bar" style="width:90%;background:#2E75B6"></span><span class="val">90</span></div>
+<div class="row"><span class="lbl">Identify</span><span class="bar" style="width:90%;background:#2E75B6"></span><span class="val">90</span></div>
+<div class="row"><span class="lbl">Protect</span><span class="bar" style="width:86%;background:#2E75B6"></span><span class="val">86</span></div>
+<div class="row"><span class="lbl">Detect</span><span class="bar" style="width:57%;background:#2E75B6"></span><span class="val">57</span></div>
+<div class="row"><span class="lbl">Respond</span><span class="bar" style="width:86%;background:#2E75B6"></span><span class="val">86</span></div>
+<div class="row"><span class="lbl">Recover</span><span class="bar" style="width:85%;background:#2E75B6"></span><span class="val">85</span></div>
+<h3>Top risks</h3><table><tr><th>Risk ID</th><th>System</th><th>Risk</th><th>Score</th><th>Rating</th></tr>
+<tr><td>CRA-2026-007-R02</td><td>Haul Truck Fleet Management</td><td>Stolen passwords could give an attacker access.</td><td>16</td><td>Critical</td></tr>
+<tr><td>CRA-2026-007-R03</td><td>Haul Truck Fleet Management</td><td>An attack on the business network could spread to operations.</td><td>16</td><td>Critical</td></tr>
+<tr><td>CRA-2026-007-R04</td><td>Haul Truck Fleet Management</td><td>Attacks may go unnoticed without logs.</td><td>16</td><td>Critical</td></tr>
+<tr><td>CRA-2026-004-R01</td><td>Payroll Outsourcing Portal</td><td>A vendor with weak security could expose company data.</td><td>15</td><td>High</td></tr>
+<tr><td>CRA-2026-004-R02</td><td>Payroll Outsourcing Portal</td><td>Unusual activity may not raise an alert in time.</td><td>15</td><td>High</td></tr>
+</table><h3>Intake log</h3><table><tr><th>ID</th><th>System</th><th>Level</th><th>Status</th><th>Due</th><th>On time</th><th>Rating</th></tr>
+<tr><td>CRA-2026-001</td><td>Expense Reporting App</td><td>Intermediate</td><td>Closed</td><td>2026-09-15</td><td>yes</td><td>High</td></tr>
+<tr><td>CRA-2026-002</td><td>Intranet News Plugin</td><td>Intermediate</td><td>Closed</td><td>2026-09-17</td><td>yes</td><td>Low</td></tr>
+<tr><td>CRA-2026-003</td><td>Mill Process Historian</td><td>Advanced</td><td>Closed</td><td>2026-10-06</td><td>yes</td><td>High</td></tr>
+<tr><td>CRA-2026-004</td><td>Payroll Outsourcing Portal</td><td>Advanced</td><td>Closed</td><td>2026-10-13</td><td>no</td><td>High</td></tr>
+<tr><td>CRA-2026-005</td><td>Water Quality Dashboard</td><td>Basic</td><td>Closed</td><td>2026-09-29</td><td>yes</td><td>Low</td></tr>
+<tr><td>CRA-2026-006</td><td>Supplier Onboarding Tool</td><td>Intermediate</td><td>Closed</td><td>2026-10-15</td><td>no</td><td>High</td></tr>
+<tr><td>CRA-2026-007</td><td>Haul Truck Fleet Management</td><td>Advanced</td><td>In assessment</td><td>2026-11-03</td><td>overdue</td><td>Critical</td></tr>
+<tr><td>CRA-2026-008</td><td>Incident Reporting Mobile App</td><td>Advanced</td><td>Closed</td><td>2026-11-11</td><td>yes</td><td>High</td></tr>
+<tr><td>CRA-2026-009</td><td>Contract Search Tool</td><td>Basic</td><td>Closed</td><td>2026-10-27</td><td>yes</td><td>Medium</td></tr>
+<tr><td>CRA-2026-010</td><td>Developer Code Assistant</td><td>Intermediate</td><td>In assessment</td><td>2026-11-11</td><td>overdue</td><td>Medium</td></tr>
+<tr><td>CRA-2026-011</td><td>Budget Planning Spreadsheet Add-in</td><td>Basic</td><td>In assessment</td><td>2026-11-10</td><td>overdue</td><td>Low</td></tr>
+<tr><td>CRA-2026-012</td><td>Remote Drill Control Upgrade</td><td>Advanced</td><td>In assessment</td><td>2026-12-08</td><td>open</td><td>High</td></tr>
+</table></body></html>
