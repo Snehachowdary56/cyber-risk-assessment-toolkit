@@ -1,0 +1,182 @@
+[
+ {
+  "id": "GV-01",
+  "csf": "GV.RM",
+  "function": "Govern",
+  "level": "Basic",
+  "weight": 2,
+  "question": "Is there a named business owner who accepts the risk for this system?",
+  "risk": "No one is accountable for the system's risk, so problems may not be fixed.",
+  "fix": "Name a business owner who signs off on the risk."
+ },
+ {
+  "id": "GV-02",
+  "csf": "GV.SC",
+  "function": "Govern",
+  "level": "Intermediate",
+  "weight": 3,
+  "question": "If a vendor is involved, has the vendor's security been reviewed (for example a SOC 2 report) and is security covered in the contract?",
+  "risk": "A vendor with weak security could expose company data.",
+  "fix": "Review the vendor's SOC 2 report and add security terms to the contract."
+ },
+ {
+  "id": "GV-03",
+  "csf": "GV.PO",
+  "function": "Govern",
+  "level": "Advanced",
+  "weight": 2,
+  "question": "Are the system's security responsibilities written down and agreed between the business, IT and the vendor?",
+  "risk": "Unclear security duties mean tasks fall through the cracks.",
+  "fix": "Write a responsibility matrix (RACI) for security tasks."
+ },
+ {
+  "id": "ID-01",
+  "csf": "ID.AM",
+  "function": "Identify",
+  "level": "Basic",
+  "weight": 2,
+  "question": "Is the system recorded in the asset inventory with its data classification?",
+  "risk": "An unrecorded system may be missed by patching and monitoring.",
+  "fix": "Add the system and its data classification to the asset inventory."
+ },
+ {
+  "id": "ID-02",
+  "csf": "ID.RA",
+  "function": "Identify",
+  "level": "Intermediate",
+  "weight": 3,
+  "question": "Have known vulnerabilities been scanned for and are critical findings fixed?",
+  "risk": "Known vulnerabilities could be used by an attacker.",
+  "fix": "Run a vulnerability scan and fix critical and high findings before go-live."
+ },
+ {
+  "id": "ID-03",
+  "csf": "ID.AM",
+  "function": "Identify",
+  "level": "Advanced",
+  "weight": 2,
+  "question": "Is there a current data-flow diagram showing where sensitive data is stored and sent?",
+  "risk": "Sensitive data may be stored or sent where no one expects.",
+  "fix": "Draw a data-flow diagram and confirm where sensitive data goes."
+ },
+ {
+  "id": "PR-01",
+  "csf": "PR.AA",
+  "function": "Protect",
+  "level": "Basic",
+  "weight": 3,
+  "question": "Do users sign in through company single sign-on with multi-factor authentication (MFA)?",
+  "risk": "Stolen passwords could give an attacker access.",
+  "fix": "Connect the system to single sign-on with MFA."
+ },
+ {
+  "id": "PR-02",
+  "csf": "PR.AA",
+  "function": "Protect",
+  "level": "Basic",
+  "weight": 3,
+  "question": "Do users get only the access they need (least privilege), with admin access limited and reviewed?",
+  "risk": "Too much access raises the damage from a mistake or a stolen account.",
+  "fix": "Apply least privilege and review admin access every quarter."
+ },
+ {
+  "id": "PR-03",
+  "csf": "PR.DS",
+  "function": "Protect",
+  "level": "Basic",
+  "weight": 3,
+  "question": "Is data encrypted in transit (TLS) and at rest?",
+  "risk": "Unencrypted data could be read if intercepted or stolen.",
+  "fix": "Turn on TLS and encryption at rest."
+ },
+ {
+  "id": "PR-04",
+  "csf": "PR.PS",
+  "function": "Protect",
+  "level": "Intermediate",
+  "weight": 2,
+  "question": "Are security patches applied within the company's patching timelines?",
+  "risk": "Unpatched software is a common way in for attackers.",
+  "fix": "Agree a patching schedule that meets company timelines."
+ },
+ {
+  "id": "PR-05",
+  "csf": "PR.IR",
+  "function": "Protect",
+  "level": "Advanced",
+  "weight": 3,
+  "question": "Is the system separated from other networks (for example operational technology kept apart from the business network)?",
+  "risk": "An attack on the business network could spread to operations.",
+  "fix": "Separate the system with network segmentation and firewall rules."
+ },
+ {
+  "id": "PR-06",
+  "csf": "PR.AT",
+  "function": "Protect",
+  "level": "Intermediate",
+  "weight": 1,
+  "question": "Have the people who run the system completed security awareness training?",
+  "risk": "Untrained staff are more likely to fall for phishing or misconfigure the system.",
+  "fix": "Assign security awareness training to the system's operators."
+ },
+ {
+  "id": "DE-01",
+  "csf": "DE.CM",
+  "function": "Detect",
+  "level": "Intermediate",
+  "weight": 3,
+  "question": "Are security logs (sign-ins, admin changes) sent to the security monitoring team?",
+  "risk": "Attacks may go unnoticed without logs.",
+  "fix": "Send sign-in and admin logs to the security monitoring team."
+ },
+ {
+  "id": "DE-02",
+  "csf": "DE.AE",
+  "function": "Detect",
+  "level": "Advanced",
+  "weight": 2,
+  "question": "Are there alerts for unusual activity, such as many failed sign-ins or large data downloads?",
+  "risk": "Unusual activity may not raise an alert in time.",
+  "fix": "Set alerts for failed sign-ins and large downloads."
+ },
+ {
+  "id": "RS-01",
+  "csf": "RS.MA",
+  "function": "Respond",
+  "level": "Intermediate",
+  "weight": 2,
+  "question": "Is there a contact and process for reporting and handling a security incident for this system?",
+  "risk": "Incidents may be handled slowly or not reported.",
+  "fix": "Name an incident contact and link the system to the incident process."
+ },
+ {
+  "id": "RS-02",
+  "csf": "RS.CO",
+  "function": "Respond",
+  "level": "Advanced",
+  "weight": 2,
+  "question": "Must the vendor tell the company about a breach within a set time (for example 72 hours)?",
+  "risk": "The company may learn about a vendor breach too late.",
+  "fix": "Add a 72-hour breach notification clause to the contract."
+ },
+ {
+  "id": "RC-01",
+  "csf": "RC.RP",
+  "function": "Recover",
+  "level": "Basic",
+  "weight": 2,
+  "question": "Is the data backed up, and has a restore been tested?",
+  "risk": "Data could be lost for good after an incident.",
+  "fix": "Back up the data and test a restore."
+ },
+ {
+  "id": "RC-02",
+  "csf": "RC.RP",
+  "function": "Recover",
+  "level": "Advanced",
+  "weight": 2,
+  "question": "Is there a tested recovery plan that meets the business's downtime limit?",
+  "risk": "Recovery could take longer than the business can accept.",
+  "fix": "Write and test a recovery plan against the downtime limit."
+ }
+]

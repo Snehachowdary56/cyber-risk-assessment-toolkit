@@ -1,0 +1,59 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: pip install -r requirements.txt ruff
+      - name: Lint
+        run: ruff check .
+      - name: Tests
+        run: pytest -q
+
+  run-and-publish:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Run the toolkit on the sample data
+        run: python -m riskkit
+      - name: Check the outputs
+        run: |
+          test "$(ls output/reports | wc -l)" -eq 12
+          test "$(ls output/briefings | wc -l)" -eq 12
+          test -f output/risk_register.xlsx
+          python -c "import json; s=json.load(open('output/summary.json')); assert s['risks_total']==29, s"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: risk-assessment-output
+          path: output/
+      - name: Publish dashboard to GitHub Pages
+        if: github.ref == 'refs/heads/main'
+        run: |
+          mkdir site
+          cp output/dashboard.html site/index.html
+          cp output/risk_register.xlsx site/
+          cd site
+          git init -q -b gh-pages
+          git config user.name "Snehachowdary56"
+          git config user.email "snehagunturu@gmail.com"
+          git add . && git commit -qm "Publish dashboard"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" gh-pages

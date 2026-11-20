@@ -1,0 +1,15 @@
+received,requestor,department,system_name,description,vendor,internet_facing,data_classification,personal_info,operational_technology,users,business_criticality,completed
+2026-09-01,A. Patel,Finance,Expense Reporting App,Cloud app for staff expense claims,yes,yes,Confidential,yes,no,1200,Medium,2026-09-10
+2026-09-03,J. Moreau,Communications,Intranet News Plugin,Plugin that shows company news on the intranet,yes,no,Internal,no,no,3000,Low,2026-09-05
+2026-09-08,L. Chen,Operations,Mill Process Historian,Collects sensor data from the mill control system,yes,no,Confidential,no,yes,40,High,2026-10-02
+2026-09-15,R. Singh,Human Resources,Payroll Outsourcing Portal,Vendor portal that runs payroll for employees,yes,yes,Restricted,yes,no,9000,High,2026-10-20
+2026-09-22,M. Okafor,Environment,Water Quality Dashboard,Public dashboard of water monitoring results,no,yes,Public,no,no,50,Medium,2026-09-25
+2026-10-01,S. Kim,Supply Chain,Supplier Onboarding Tool,Collects supplier banking and tax details,yes,yes,Confidential,yes,no,300,Medium,2026-10-21
+2026-10-06,D. Tremblay,Operations,Haul Truck Fleet Management,Tracks haul truck locations and maintenance at the mine site,yes,yes,Confidential,no,yes,250,High,
+2026-10-14,P. Nguyen,Safety,Incident Reporting Mobile App,Workers report safety incidents from their phones,yes,yes,Confidential,yes,no,4000,High,2026-11-06
+2026-10-20,K. Brown,Legal,Contract Search Tool,Search across signed contracts,no,no,Confidential,no,no,60,Low,2026-10-27
+2026-10-28,E. Garcia,Information Technology,Developer Code Assistant,AI coding assistant for the software team,yes,yes,Internal,no,no,80,Low,
+2026-11-03,T. Wilson,Finance,Budget Planning Spreadsheet Add-in,Excel add-in that pulls budget figures,yes,no,Internal,no,no,150,Medium,
+2026-11-10,H. Ali,Operations,Remote Drill Control Upgrade,Upgrade to remote control software for drills,yes,yes,Restricted,no,yes,25,High,
+2026-11-12,,Marketing,Event Sign-up Form,Form for an external event,yes,yes,Internal,yes,no,500,Low,
+2026-11-12,A. Patel,Finance,Expense Reporting App,Cloud app for staff expense claims,yes,yes,Confidential,yes,no,1200,Medium,

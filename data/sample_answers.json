@@ -1,0 +1,15 @@
+{
+  "_note": "Made-up questionnaire answers. Only answers that are not 'Yes' are listed; every other question asked at the request's level was answered 'Yes'.",
+  "Expense Reporting App": {"PR-02": "Partial", "DE-01": "No"},
+  "Intranet News Plugin": {"ID-01": "No"},
+  "Mill Process Historian": {"PR-05": "Partial", "PR-04": "No", "DE-01": "No", "DE-02": "No", "RC-02": "Partial"},
+  "Payroll Outsourcing Portal": {"RS-02": "No", "GV-02": "Partial", "DE-02": "No"},
+  "Water Quality Dashboard": {},
+  "Supplier Onboarding Tool": {"PR-01": "No", "PR-03": "Partial", "ID-02": "No"},
+  "Haul Truck Fleet Management": {"PR-01": "No", "PR-05": "No", "ID-02": "Partial", "DE-01": "No", "RS-02": "No", "RC-02": "No"},
+  "Incident Reporting Mobile App": {"PR-02": "Partial", "RC-01": "Partial"},
+  "Contract Search Tool": {"PR-02": "No"},
+  "Developer Code Assistant": {"GV-02": "No", "PR-01": "Partial"},
+  "Budget Planning Spreadsheet Add-in": {},
+  "Remote Drill Control Upgrade": {"PR-05": "Partial", "DE-02": "No", "RC-02": "Partial", "GV-03": "No"}
+}
